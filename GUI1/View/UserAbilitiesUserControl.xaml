@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="GUI1.View.UserAbilitiesUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUI1.View"
+             mc:Ignorable="d" 
+             Name="userAbilitiesUC"
+             d:DesignHeight="450" d:DesignWidth="400" d:Background="White">
+    <StackPanel Orientation="Vertical">
+        <TextBlock FontSize="16" Text="Your abilities" />
+        <TextBlock>
+            <Hyperlink Command="{Binding ElementName=userAbilitiesUC, Path=BackToStatsCommand}">Back to stats</Hyperlink>
+        </TextBlock>
+        <ListBox ItemsSource="{Binding ElementName=userAbilitiesUC, Path=Abilities}" />
+    </StackPanel>
+</UserControl>

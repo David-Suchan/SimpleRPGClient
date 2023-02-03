@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Map\dirt1.png" />
+    <None Remove="Images\Map\grass1.png" />
+    <None Remove="Images\Map\grass2.png" />
+    <None Remove="Images\Map\paving1.png" />
+    <None Remove="Images\Map\stone2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Map\dirt1.png" />
+    <EmbeddedResource Include="Images\Map\grass1.png" />
+    <EmbeddedResource Include="Images\Map\grass2.png" />
+    <EmbeddedResource Include="Images\Map\paving1.png" />
+    <EmbeddedResource Include="Images\Map\stone2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KaiserMVVMCore" Version="1.3.1" />
+  </ItemGroup>
+
+</Project>
